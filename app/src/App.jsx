@@ -4,6 +4,7 @@ import { GoPeople } from "react-icons/go";
 import { LuClock, LuGitBranch, LuShield, LuZap } from "react-icons/lu";
 import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/Card";
 import DiagramSection from "./components/gitflow/DiagramSection";
+import CommandsSection from "./components/gitflow/CommandsSction";
 
 function App() {
   return (
@@ -154,6 +155,7 @@ function App() {
         </div>
       </section>
       <DiagramSection />
+      <CommandsSection />
     </>
   );
 }
