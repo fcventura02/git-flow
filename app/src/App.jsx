@@ -3,6 +3,7 @@ import GitFlowIcon from "./components/svg/logoGitFlow";
 import { GoPeople } from "react-icons/go";
 import { LuClock, LuGitBranch, LuShield, LuZap } from "react-icons/lu";
 import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/Card";
+import DiagramSection from "./components/gitflow/DiagramSection";
 
 function App() {
   return (
@@ -75,7 +76,7 @@ function App() {
               <CardContent>
                 <p className="text-sm text-gray-600">
                   Ideal para equipes com múltiplos desenvolvedores trabalhando
-                simultaneamente
+                  simultaneamente
                 </p>
               </CardContent>
             </Card>
@@ -115,22 +116,36 @@ function App() {
           </div>
           <Card className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white">
             <CardHeader>
-              <CardTitle className="text-2xl text-center">Cenário Real: Time de 5 Desenvolvedores</CardTitle>
+              <CardTitle className="text-2xl text-center">
+                Cenário Real: Time de 5 Desenvolvedores
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <p className="text-start text-indigo-100">
-                  Imagine um time trabalhando em um e-commerce: Maria desenvolvendo o sistema de pagamento, 
-                  João criando o carrinho de compras, Ana corrigindo bugs de SEO, Pedro preparando uma release, 
-                  e Carlos fazendo um hotfix urgente na autenticação.
+                  Imagine um time trabalhando em um e-commerce: Maria
+                  desenvolvendo o sistema de pagamento, João criando o carrinho
+                  de compras, Ana corrigindo bugs de SEO, Pedro preparando uma
+                  release, e Carlos fazendo um hotfix urgente na autenticação.
                 </p>
                 <div className="bg-white/10 rounded-lg p-4">
-                  <h4 className="text-start font-semibold mb-2">Com Git Flow:</h4>
+                  <h4 className="text-start font-semibold mb-2">
+                    Com Git Flow:
+                  </h4>
                   <ul className="text-start space-y-1 text-sm text-indigo-100">
-                    <li>• Cada um trabalha em sua própria branch sem conflitos</li>
-                    <li>• As features são integradas de forma controlada na develop</li>
-                    <li>• A release é preparada sem afetar o desenvolvimento</li>
-                    <li>• O hotfix é aplicado diretamente na main e sincronizado</li>
+                    <li>
+                      • Cada um trabalha em sua própria branch sem conflitos
+                    </li>
+                    <li>
+                      • As features são integradas de forma controlada na
+                      develop
+                    </li>
+                    <li>
+                      • A release é preparada sem afetar o desenvolvimento
+                    </li>
+                    <li>
+                      • O hotfix é aplicado diretamente na main e sincronizado
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -138,6 +153,7 @@ function App() {
           </Card>
         </div>
       </section>
+      <DiagramSection />
     </>
   );
 }
