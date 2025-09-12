@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/Card";
 import DiagramSection from "./components/gitflow/DiagramSection";
 import CommandsSection from "./components/gitflow/CommandsSction";
 import ExamplesSection from "./components/gitflow/ExamplesSection";
+import CommitPatternsSection from "./components/gitflow/CommitPatternsSection";
+import Footer from "./components/gitflow/Footer";
 
 function App() {
   return (
@@ -158,6 +160,8 @@ function App() {
       <DiagramSection />
       <CommandsSection />
       <ExamplesSection />
+      <CommitPatternsSection />
+      <Footer />
     </>
   );
 }

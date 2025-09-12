@@ -20,6 +20,8 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.border{
-  @apply border-[#e2e8f0]
+@layer components {
+  .border{
+    @apply border-[#e2e8f0]
+  }
 }
