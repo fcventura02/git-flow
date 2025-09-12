@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import { cva } from "class-variance-authority";
 
 const buttonVariants = cva(
@@ -32,7 +30,7 @@ const buttonVariants = cva(
 );
 
 const Button = (
-  { className, variant, size, asChild = false, ...props },
+  { className, variant, size, ...props },
   ref
 ) => {
   return (

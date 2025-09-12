@@ -5,6 +5,7 @@ import { LuClock, LuGitBranch, LuShield, LuZap } from "react-icons/lu";
 import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/Card";
 import DiagramSection from "./components/gitflow/DiagramSection";
 import CommandsSection from "./components/gitflow/CommandsSction";
+import ExamplesSection from "./components/gitflow/ExamplesSection";
 
 function App() {
   return (
@@ -156,6 +157,7 @@ function App() {
       </section>
       <DiagramSection />
       <CommandsSection />
+      <ExamplesSection />
     </>
   );
 }
